@@ -30,8 +30,13 @@ Managalabhrathi Trust is a comprehensive web platform for managing and showcasin
    ```
 
 2. Configure Database
-   - Create a MySQL database
-   - Update `includes/config.php` with your database credentials
+   - Copy `includes/config.sample.php` to `includes/config.php`
+   ```bash
+   cp includes/config.sample.php includes/config.php
+   ```
+   - Edit `includes/config.php` with your database credentials
+     - Update `DB_HOST`, `DB_USER`, `DB_PASS`, `DB_NAME`
+     - Set appropriate `BASE_URL`
 
 3. Set Up Local Server
    ```bash
@@ -42,6 +47,7 @@ Managalabhrathi Trust is a comprehensive web platform for managing and showcasin
 - Upload files to Hostinger
 - Set file permissions (755 for directories, 644 for files)
 - Configure database in Hostinger control panel
+- **Never commit your actual `config.php`**
 
 ## Security
 - Always use HTTPS
