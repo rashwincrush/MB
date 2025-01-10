@@ -1,0 +1,42 @@
+# Configuration files
+includes/config.php
+.env
+
+# Dependencies
+vendor/
+node_modules/
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Cache and temporary files
+*.tmp
+*.temp
+cache/
+tmp/
+
+# Compiled assets
+/public/assets/css/*.min.css
+/public/assets/js/*.min.js
+
+# Environment specific files
+phpunit.xml
+*.env
+*.env.backup
